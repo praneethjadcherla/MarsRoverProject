@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class MarsRoverTest {
     @Test
     public void checkRoverMoveLeftInstructions() {
-        MarsRover rover = new MarsRover(1, 2, DirectionFacing.N);
+        MarsVehicle rover = new Rover("1 2 N");
 
         assertEquals("1 3 N", rover.instructionsToMoveRover("LMLMLMLMM"));
         //System.out.println(rover.instructionsToMoveRover("MMRMMRMRRM"));
@@ -15,7 +15,7 @@ public class MarsRoverTest {
 
     @Test
     public void checkRoverMoveRightInstructions() {
-        MarsRover rover = new MarsRover(3, 3, DirectionFacing.E);
+        MarsVehicle rover = new Rover("3 3 E");
 
         assertEquals("5 1 E", rover.instructionsToMoveRover("MMRMMRMRRM"));
 
