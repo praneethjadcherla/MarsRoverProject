@@ -1,14 +1,14 @@
-package com.techreturners;
+package com.techreturners.Vehicles;
 
 public abstract class MarsVehicleImpl implements MarsVehicle {
-    public int x_coordinate;
-    public int y_coordinate;
-    public DirectionFacing directionFacing;
+    private int x_coordinate;
+    private int y_coordinate;
+    private DirectionFacing directionFacing;
 
-    public MarsVehicleImpl(String roverInitialPosition){
-        this.x_coordinate=Integer.parseInt(String.valueOf(roverInitialPosition.charAt(0)));
-        this.y_coordinate=Integer.parseInt(String.valueOf(roverInitialPosition.charAt(2)));
-        this.directionFacing=DirectionFacing.valueOf(String.valueOf(roverInitialPosition.charAt(4)));
+    public MarsVehicleImpl(String roverInitialPosition) {
+        this.x_coordinate = Integer.parseInt(String.valueOf(roverInitialPosition.charAt(0)));
+        this.y_coordinate = Integer.parseInt(String.valueOf(roverInitialPosition.charAt(2)));
+        this.directionFacing = DirectionFacing.valueOf(String.valueOf(roverInitialPosition.charAt(4)));
     }
 
     public int getX_coordinate() {
@@ -35,5 +35,5 @@ public abstract class MarsVehicleImpl implements MarsVehicle {
         this.directionFacing = directionFacing;
     }
 
-    public abstract String instructionsToMoveRover(String instructions);
+    public abstract String instructionsToMoveRover(String instructions, Rover rover);
 }

@@ -1,4 +1,4 @@
-package com.techreturners;
+package com.techreturners.Vehicles;
 
 public enum DirectionFacing {
     N,
