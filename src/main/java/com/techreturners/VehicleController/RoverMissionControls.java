@@ -8,5 +8,4 @@ public interface RoverMissionControls {
     public void rotateRight(Rover rover);
     public void moveForward(Rover rover);
 
-
 }

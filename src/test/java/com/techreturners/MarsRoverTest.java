@@ -10,14 +10,17 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MarsRoverTest {
     @Test
-    public void checkRoverMoveLeftInstructions() {
+    public void checkRoverMoveLeftInstructions() throws Exception {
+        Plateau square=new SquarePlateau("5 5");
         MarsVehicle rover = new Rover("1 2 N");
+
         assertEquals("1 3 N", rover.instructionsToMoveRover("LMLMLMLMM", (Rover) rover));
         //System.out.println(rover.instructionsToMoveRover("MMRMMRMRRM"));
     }
 
     @Test
-    public void checkRoverMoveRightInstructions() {
+    public void checkRoverMoveRightInstructions() throws Exception {
+        Plateau square=new SquarePlateau("5 5");
         MarsVehicle rover = new Rover("3 3 E");
 
         assertEquals("5 1 E", rover.instructionsToMoveRover("MMRMMRMRRM", (Rover) rover));
@@ -28,7 +31,7 @@ public class MarsRoverTest {
     public void checkPlateauMaximumCoordinates(){
         Plateau square=new SquarePlateau("5 5");
 
-        assertEquals(5,square.getMAX_X_COORDINATE());
-        assertEquals(5,square.getMAX_Y_COORDINATE());
+        assertEquals(5,square.getMax_X_Coordinate());
+        assertEquals(5,square.getMax_Y_Coordinate());
     }
 }

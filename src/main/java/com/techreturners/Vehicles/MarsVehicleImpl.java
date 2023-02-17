@@ -35,5 +35,5 @@ public abstract class MarsVehicleImpl implements MarsVehicle {
         this.directionFacing = directionFacing;
     }
 
-    public abstract String instructionsToMoveRover(String instructions, Rover rover);
+    public abstract String instructionsToMoveRover(String instructions, Rover rover) throws Exception;
 }

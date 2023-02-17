@@ -7,6 +7,6 @@ public abstract class Plateau {
           this.coordinates=coordinates;
        }
 
-       public abstract int getMAX_X_COORDINATE();
-       public abstract int getMAX_Y_COORDINATE();
+       public abstract int getMax_X_Coordinate();
+       public abstract int getMax_Y_Coordinate();
 }
