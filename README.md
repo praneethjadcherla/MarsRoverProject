@@ -26,7 +26,10 @@ All the tests should pass and the application shoud run successfully for additio
 
 ## Future Thoughts
 Plateau can be of different shapes.
+
 Different types of Vehicle, Rovers and Robots can be placed on the plateau.
+
 User Interface can be implemented in the future.
+
 Vehicle can skip the current instruction when there is obstacle and follow the next instruction given by User.
 
