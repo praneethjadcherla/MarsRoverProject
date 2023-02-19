@@ -1,4 +1,4 @@
-package com.techreturners.Vehicles;
+package com.techreturners.model.Vehicles;
 
 public abstract class MarsVehicleImpl implements MarsVehicle {
     private int x_coordinate;

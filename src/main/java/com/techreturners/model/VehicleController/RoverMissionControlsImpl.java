@@ -1,7 +1,7 @@
-package com.techreturners.VehicleController;
+package com.techreturners.model.VehicleController;
 
-import com.techreturners.Vehicles.DirectionFacing;
-import com.techreturners.Vehicles.Rover;
+import com.techreturners.model.Vehicles.DirectionFacing;
+import com.techreturners.model.Vehicles.Rover;
 
 public class RoverMissionControlsImpl implements RoverMissionControls {
 
@@ -32,7 +32,7 @@ public class RoverMissionControlsImpl implements RoverMissionControls {
     }
 
     @Override
-    public void moveForward(Rover rover){
+    public void moveForward(Rover rover) {
         if (rover.getDirectionFacing().equals(DirectionFacing.N)) {
             rover.setY_coordinate(rover.getY_coordinate() + 1);
         } else if (rover.getDirectionFacing().equals(DirectionFacing.W)) {
